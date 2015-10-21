@@ -51,7 +51,6 @@
 #include <version.h>
 #include "autoconf.h"  // for pseudoconfig
 
-
 /*
  * These two pieces of data are maintained by the makefiles and build system.
  * buildconfig is the name of the config file the kernel was configured with.
@@ -101,6 +100,7 @@ boot(void)
 	kprintf("%s", harvard_copyright);
 	kprintf("\n");
 
+	hello();
 	kprintf("Brieanna Benson's system version %s (%s #%d)\n", 
 		GROUP_VERSION, buildconfig, buildversion);
 	kprintf("\n");
