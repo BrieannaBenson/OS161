@@ -67,6 +67,9 @@ int uwlocktest1(int, char **);
 int uwvmstatstest(int, char **);
 #endif
 
+/* Don't Panic Test program */
+int dontpanic(int, char **);
+
 /* filesystem tests */
 int fstest(int, char **);
 int readstress(int, char **);
@@ -89,7 +92,7 @@ void menu(char *argstr);
 /* The main function, called from start.S. */
 void kmain(char *bootstring);
 
-/* Hello  test function. */
+/* Hello test function. */
 void hello(void);
 
 #endif /* _TEST_H_ */

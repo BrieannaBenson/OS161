@@ -430,7 +430,7 @@ static const char *opsmenu[] = {
 	"[p]       Other program             ",
 	"[mount]   Mount a filesystem        ",
 	"[unmount] Unmount a filesystem      ",
-	"[bootfs]  Set \"boot\" filesystem     ",
+	"[bootfs]  Set \"boot\" filesystem   ",
 	"[pf]      Print a file              ",
 	"[cd]      Change directory          ",
 	"[pwd]     Print current directory   ",
@@ -459,6 +459,7 @@ static const char *testmenu[] = {
 	"[tt1] Thread test 1                 ",
 	"[tt2] Thread test 2                 ",
 	"[tt3] Thread test 3                 ",
+        "[dontpanic] A simple reminder        ",
 #if OPT_NET
 	"[net] Network test                  ",
 #endif
@@ -568,6 +569,7 @@ static struct {
 #if OPT_NET
 	{ "net",	nettest },
 #endif
+        { "dontpanic",  dontpanic },
 	{ "tt1",	threadtest },
 	{ "tt2",	threadtest2 },
 	{ "tt3",	threadtest3 },
